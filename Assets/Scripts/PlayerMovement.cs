@@ -4,7 +4,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
 public CharacterController2D controller;
-public Animator animator;
 
 public float runSpeed = 40f;
 
@@ -23,11 +22,5 @@ horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 	{
 // Move our character
 		controller.Move(horizontalMove * Time.fixedDeltaTime, false, false);
-
-
-		if (Input.GetButtonDown ("swing")) 
-		{
-	animator.SetBool("Hit", true);
-		}
 	}
 }
