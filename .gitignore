@@ -36,3 +36,9 @@ sysinfo.txt
 *.unitypackage
 Assets/Scripts.meta
 Assets/Animation.meta
+Assets/Animation.meta
+Assets/Animation/doode1.controller.meta
+Assets/Animation/RedEnemy.anim.meta
+Assets/AnimationLaura.meta
+Assets/AnimationLaura/doode1.controller.meta
+Assets/AnimationLaura/RedEnemy.anim.meta
