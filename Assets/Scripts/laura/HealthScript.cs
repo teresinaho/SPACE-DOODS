@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthScript : MonoBehaviour {
-
-    public Image healthBar;
-    public float max_health = 100F;
+     
+    public Image Bar;
+    public float max_health = 100f;
     public float cur_health = 0f;
 
 
@@ -25,6 +25,6 @@ public class HealthScript : MonoBehaviour {
 	// Update is called once per frame
 	void SetHealthBar() {
         float my_health = cur_health / max_health;
-        healthBar.transform.localScale = new Vector3(Mathf.Clamp(my_health, 0F, 0f), healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+        Bar.transform.localScale = new Vector2(Mathf.Clamp(my_health, 0f, 1f), Bar.transform.localScale.y);
 	}
 }

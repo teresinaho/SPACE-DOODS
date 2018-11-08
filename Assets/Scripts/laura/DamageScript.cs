@@ -11,15 +11,12 @@ public class DamageScript : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    private void OnTriggerEnter(Collider other)
+   void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Bum");
+        //if (other.gameObject.tag =="Player"){
+            
         other.gameObject.GetComponent<HealthScript>().TakeDamage(damage);
+        Debug.Log("DAMAGE");
     }
 
 }
