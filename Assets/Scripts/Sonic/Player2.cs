@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2 : MonoBehaviour
+public class Player2: MonoBehaviour
 {
     public float speed;
     public Transform player;
@@ -21,7 +21,7 @@ public class Player2 : MonoBehaviour
     void Update()
     {
 
-        this.transform.Rotate(0, 0, -Input.GetAxis("Horizontal") * speed);
+        this.transform.Rotate(0, 0, -Input.GetAxis("Horizontal2") * speed);
 
         if (Input.GetKeyDown(KeyCode.Space) && jumped == false)
         {
